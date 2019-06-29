@@ -8,4 +8,5 @@ request = Request(URL, data=None, headers={'User-Agent': HEADER})
 
 soup = BeautifulSoup(urlopen(request), 'html.parser')
 
-#print(soup.title)
+#print(soup.div.div['class']) This one works!
+print(soup.find(title="Strange Gold Botkiller Minigun Mk.II"))
